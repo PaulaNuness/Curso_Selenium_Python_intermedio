@@ -1,0 +1,66 @@
+¿Con qué método/s extraerías la cadena de texto de un elemento textbox?
+ respuesta:textbox.text
+**********************************************************************************
+ ¿Qué espera seteará la siguiente sentencia?: "driver.implicitly_wait(10)"
+ respuesta:Esperará, de manera general para todos los elementos desde su declaración, hasta 10 segundos, antes de devolver un error NoSuchElementException.
+**********************************************************************************
+ Si queremos identificar y hacer click sobre el siguiente elemento:
+> \<input type="button" id="boton1" value="Login" disabled />
+mediante la siguiente sentencia:
+> wait = WebDriverWait(driver, 10)
+> elemento = wait.until(expected_conditions.element_to_be_clickable(By.ID, "boton1"))
+> elemento.click();
+respuesta:Selenium devolverá TimeoutException.
+**********************************************************************************
+¿A qué mecanismo de espera corresponde la siguiente sentencia?
+> wait = WebDriverWait(driver, 10)
+ respuesta:ExplicitWait
+**********************************************************************************
+¿Qué requisito deben cumplir varios inputs de tipo "radio" para pertenecer al mismo grupo?
+respuesta: Que el atributo "name" sea el mismo.
+**********************************************************************************
+¿Qué ocurre si preguntamos por el estado de selección de un checkbox (checked/unchecked) cuando dicho elemento se encuentra deshabilitado?
+respuesta:Selenium devolverá el estado de selección del elemento independientemente de que esté habilitado o no.
+**********************************************************************************
+¿En qué versión de Selenium ha evolucionado Selenium RC?
+respuesta:Selenium WebDriver
+**********************************************************************************
+¿Cuál de estos métodos nos devolvería el elemento Alert para, posteriormente, poder trabajar con él?
+respuesta:alert = wait.until(expected_conditions.alert_is_present())
+**********************************************************************************
+¿Cuál/es de las siguientes sentencias nos devolverá el texto que contiene un Alert?
+ El tipo de variable Alert no dispone de ese método.
+respuesta:alert.text
+**********************************************************************************
+Cómo podemos extraer el valor de un atributo de un elemento?
+respuesta:Utilizando elemento.get_attribute("atributo")
+**********************************************************************************
+¿Qué ocurre si tratamos de realizar una deselección sobre una opción que pertenece a un combobox NO múltiple?
+respuesta:Selenium devuelve un error "UnsupportedOperationException" informando de que sólo se pueden deseleccionar opciones de combobox multiselección.
+**********************************************************************************
+¿Podemos usar el método ".send_keys()" pasándole como parámetro una cadena vacía ("") para vaciar un elemento textbox?.
+respuesta:No, para eliminar el contenido debemos utilizar el método ".clear()".
+**********************************************************************************
+¿Qué son las pruebas de regresión?
+rspuesta:Pruebas que se realizan tras cada despliegue para verificar que todo sigue funcionando correctamente
+**********************************************************************************
+Con qué método podemos saber si un checkbox está activado, o no, cuando entramos en una página web?
+respuesta:checkbox.is_selected()
+**********************************************************************************
+¿Cómo podemos navegar hacia atrás desde la página actual?
+respuesta:driver.back()
+**********************************************************************************
+Si tras realizar un par de veces, de manera exitosa, un test de regresión encontramos que una de las pruebas comienza a fallar, ¿qué es lo primero que deberíamos hacer?
+respuesta:Una verificación manual la prueba que está fallando para comprobar que el comportamiento de la web sigue siendo el esperado.
+**********************************************************************************
+¿Cuál/es de los siguientes procesos cierran completamente el navegador y sesión de Selenium en cualquier circunstancia?Multirrespuesta
+ respuesta_multiple:"driver.close()" y, posteriormente, "driver.quit()"
+ "driver.quit()"
+ **********************************************************************************
+ ¿Si hemos de identificar un elemento sin atributos, cuya etiqueta es muy común dentro de la estructura del HTML y su ubicación es muy profunda dentro en el árbol, qué método/s sería recomendable usar? Multirrespuesta
+respuesta_multiple:
+ By.XPATH
+ By.CSS_SELECTOR
+ **********************************************************************************
+ 
+
