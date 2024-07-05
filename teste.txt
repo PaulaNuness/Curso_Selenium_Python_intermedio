@@ -1,3 +1,4 @@
+********PRINCIPIANTE*************************************
 ¿Con qué método/s extraerías la cadena de texto de un elemento textbox?
  respuesta:textbox.text
 **********************************************************************************
@@ -62,5 +63,6 @@ respuesta_multiple:
  By.XPATH
  By.CSS_SELECTOR
  **********************************************************************************
+********INTERMEDIO*************************************
  
 
