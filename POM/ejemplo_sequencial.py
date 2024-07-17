@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 import time
 
 class ejemplo_sequencial(unittest.TestCase):
+    
     def test_wikipedia_articulo_bueno(self):
         # Inicializa o driver do Chrome
         driver = webdriver.Chrome()
