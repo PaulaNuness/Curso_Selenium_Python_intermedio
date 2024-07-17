@@ -1,4 +1,5 @@
 # BDD(Behavior Driven Development) Desarrollo Guiado po Coportamento es un proceso de desarrollo de software
+# es una filosofia de diseño de pruebas
 # Si en TDD buscamos la validación de una acción concreta, en BDD tratamos de abstraernos un poco más y validar un flujo mínimo concreto.
 # ● Nos ofrece un lenguaje común (Gherkin) entre la parte de negocio y la parte técnica.
 # ● Se ha de seguir siempre el ciclo Given-When-Then:
@@ -18,9 +19,11 @@
 #        When Realizo login en el sistema
 #        Then El sistema muestra mi cuenta de usuario
 
-#    Scenario: Relaizar Login fallido
+#    Scenario: Realizar Login fallido
 #        Given Un usuario y password inválidos
 #        When Relaizo login en el sistema
 #        Then El sistema muestra un mensaje de error
 
 ############################################################################################
+# en Python es Behave
+
