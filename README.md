@@ -72,5 +72,6 @@ Para este fin se utiliza lo que se conoce como “asserts“ (aserciones), donde
 span_text = driver.find_element(span_element).text
 assert "accediendo" == span_text
 De forma que si el span_text contiene cualquier otro texto que no sea “accediendo”, o la ejecución falla, la prueba devolverá error. Pero si el elemento span contiene el string “accediendo”, la aserción devolverá True y por tanto este paso del escenario será satisfactorio.
+[BDD](https://github.com/PaulaNuness/Curso_Selenium_Python_intermedio/blob/main/Captura%20de%20pantalla%202024-07-17%20204222.png)
 
 ****************************************************************************************************************
