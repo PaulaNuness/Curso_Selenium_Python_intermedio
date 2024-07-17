@@ -75,4 +75,12 @@ De forma que si el span_text contiene cualquier otro texto que no sea “accedie
 
 * Pulsar - [BDD](https://github.com/PaulaNuness/Curso_Selenium_Python_intermedio/blob/main/Captura%20de%20pantalla%202024-07-17%20204222.png)
 
+* Paos para instalar Behave en Python
+  * no terminal en Visual Studio Code escribir: pip install behave
+  * despues escribir: python.exe -m pip install --upgrade pip
+* Estructura del proyecto:
+  * crear carpeta features
+  * dentro de la carpeta features, crear el archivo ejemplo.feature
+  * y tambien dentro de la carpeta feature crear la carpeta spets
+  * dentro de la carpeta steps, crear el archivo pasos.py
 ****************************************************************************************************************
